@@ -39,6 +39,12 @@ public static class Arrays
     ///
     /// Because a list is dynamic, this function will modify the existing data list rather than returning a new list.
     /// </summary>
+    /// 
+    /// <Plans>
+    /// Find the index where the last 'amount' elements start
+    /// Copy the last 'amount' elements into a temporary list
+    /// Remove the last 'amount' elements from the original list
+    /// Insert the copied elements at the beginning of the list
     public static void RotateListRight(List<int> data, int amount)
     {
         // TODO Problem 2 Start
@@ -57,7 +63,6 @@ public static class Arrays
 
         //Insert those elements at the front of the list
         data.InsertRange(0, temp);
-
         
     }
 }
